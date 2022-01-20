@@ -232,6 +232,8 @@ as though they all access fcsr, regardless of whether they really do.
 In addition to the bits listed above for user-accessible state, the following
 are also proposed initially for mstateen0:
 
+bit 57 hcontext and scontext of the Sdtrig extension
+
 bit 58 IMSIC state of the Advanced Interrupt Architecture (AIA)
 
 bit 59 Most other registers of the AIA
@@ -260,6 +262,8 @@ the supervisor-level iprio array accessed through siselect + sireg.
 
 The bits defined initially for hstateen0 are the same as those for mstateen0
 except applying only to state that is accessible in VS-mode:
+
+bit 57 scontext of the Sdtrig extension
 
 bit 58 IMSIC state of the AIA
 
